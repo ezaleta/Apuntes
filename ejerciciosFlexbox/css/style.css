@@ -1,0 +1,19 @@
+section{
+    width: 85%;
+    height: 95vh;
+    background-color: rgb(19, 93, 93);
+    border: dotted black 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+div{
+    width: 20%;
+    height: 15%;
+    background-color: aliceblue;
+    border: solid orange 2px;
+    background-image: url('../img/css3.png');
+    background-size: 100% 100%;
+}
