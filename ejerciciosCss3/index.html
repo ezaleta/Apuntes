@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /*No se debe de utilizar una etiqueta style en html, es una mala practica, lo correspondiente 
+        es conectar el archivo de css con mi html utilizando la etiqueta link*/
         *{margin: 0;}
         div{
             height: 300px;
             width: 300px;
-            background-color: bisque;
+            background-color: rgb(0, 0, 0);
             border: solid red 2px;
             margin-top: 20px;
             margin-left: 20px;
@@ -21,6 +23,9 @@
         .cuadradoVerde{
             background-color: rgb(34, 140, 61);
             border: double black 20px;
+        }
+        #quintoDiv{
+            background-color: yellow;
         }
     </style>
 </head>
@@ -38,12 +43,17 @@
     <div class="cuadradoAzul">
         <p>background-color: blue;</p><br>
     </div>
-    <div>
+    <!--Utilizar clases en lugar del atributo style porque, el atributo style tiene mayor jerarquia que un selector, por lo tanto no me va a dejar cambiar los estilos-->
+    <div style="background-color: brown;">
 
     </div>
     <div class="cuadradoVerde">
         background-color: rgb(34, 140, 61);<br>
         border: double black 20px;<br>
+    </div>
+    <!--El atributo id no debe ser usado para poner estilos css, debido a que tiene mayor jerarquia que las clases, por lo tanto no me dejaria cambiar los estilos utilizando clases-->
+    <div id="quintoDiv" class="cuadradoAzul">
+        
     </div>
 </body>
 </html>
