@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html{
+    font-size: medium;
+    font-family: 'Montserrat', sans-serif;
+}
+header{
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    letter-spacing: 0.5px;
+}
+
+/* Navigation menu */
+
+nav.menu-nav a{
+    display: flex; /* Usar flex aqui vs li a */
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+    transition: all 0.3s ease 0s; /* ? */
+}
+
+nav.menu-nav a::after{
+    content: '';
+    position: relative;
+    background-color: orange;
+    height: 3px;
+    width: 0%;
+    bottom: -4px;
+    transition: all 0.3s ease 0s; /* ? */
+}
+
+nav.menu-nav a:hover::after{
+    width: 100%;
+}
+
+/* .menu-list ul */
+ul.menu-list{
+    padding-left: 0;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border: solid rgb(98, 28, 138) 10px;
+    border-radius: 20px;
+    background-color: rgb(98, 28, 138);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style-type: none;
+    box-shadow: 3px 5px 10px 3px rgb(114, 92, 139);
+}
+
+li.menu-item a{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: auto;
+    /* flex-direction: column;
+    justify-content: flex-start; */
+}
+
+li.menu-item a:hover{
+    color: rgb(255, 255, 255);
+}
+
+li.menu-item i{
+    top: 0;
+    width: 35px/* 2.5vw */;
+}
+
+/* Menu type selection */
+ul.menu-button-list
+{
+    height: 5%;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: fixed;
+    width: 100%;
+    bottom: 10px;
+    gap: 50px;
+}
+
+button.menu-button
+{
+    height: 4vh;/* 50px; */
+    width: 7vw;/* 120px; */
+    border: solid rgb(98, 28, 138) 3px; /* Unidades en bordes? */
+    border-radius: 30px;
+    background-color: rgb(238, 209, 254);
+    font-size: 1rem;
+    color: rgb(98, 28, 138);
+    box-shadow: 3px 3px 5px 1px rgb(114, 92, 139);
+}
+
+button.menu-button:hover
+{
+    transform: translateY(-10px); /* Valor negativo sube? */
+    transition: all 0.3s ease 0s; /* Property, duration, timing-function, delay */
+    background-color: rgb(98, 28, 138);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+} 
+
+/* Experimento, animacion de borde */
+
+button.menu-button-exp
+{
+    height: 4vh;/* 50px; */
+    width: 7vw;/* 120px; */
+    border: solid rgb(98, 28, 138) 0.5ch;
+    border-radius: 30px;
+    background-color: rgb(238, 209, 254);
+    font-size: 1rem;
+    color: rgb(98, 28, 138);
+    box-shadow: 3px 3px 5px 1px rgb(114, 92, 139);
+}
+
+div.experimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+@keyframes animarBorde{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg) ;
+    }
+}
+
+div.experimento::before{
+    position: absolute;
+    top: -17px;
+    content: '';
+    width: 4%;
+    height: 130%;
+    background: #fff;
+    transform: rotate(90deg);
+}
+
+div.experimento:hover::before{
+    animation: animarBorde 2s linear infinite;
+}
+
+/* div.experimento::after{
+    content: '';
+    position: absolute;
+    inset: 10px;
+    background: rgb(98, 28, 138);
+    border-radius: 15px;
+} */
