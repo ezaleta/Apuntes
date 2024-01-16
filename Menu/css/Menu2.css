@@ -4,6 +4,7 @@ html{
     font-size: medium;
     font-family: 'Montserrat', sans-serif;
 }
+
 header{
     margin: 0px;
 }
@@ -41,8 +42,8 @@ nav.menu-nav a:hover::after{
 /* .menu-list ul */
 ul.menu-list{
     padding-left: 0;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    margin-left: 15dvw;
+    margin-right: 15dvw;
     border: solid rgb(98, 28, 138) 10px;
     border-radius: 20px;
     background-color: rgb(98, 28, 138);
@@ -87,8 +88,8 @@ ul.menu-button-list
 
 button.menu-button
 {
-    height: 4vh;/* 50px; */
-    width: 7vw;/* 120px; */
+    height: 4dvh;/* 50px; */
+    width: 7dvw;/* 120px; */
     border: solid rgb(98, 28, 138) 3px; /* Unidades en bordes? */
     border-radius: 30px;
     background-color: rgb(238, 209, 254);
@@ -110,8 +111,8 @@ button.menu-button:hover
 
 button.menu-button-exp
 {
-    height: 4vh;/* 50px; */
-    width: 7vw;/* 120px; */
+    height: 4dvh;/* 50px; */
+    width: 7dvw;/* 120px; */
     border: solid rgb(98, 28, 138) 0.5ch;
     border-radius: 30px;
     background-color: rgb(238, 209, 254);
