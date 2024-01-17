@@ -1,5 +1,64 @@
+/* Estilos generales */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
 body
 {
     background-color: rgb(171, 90, 24);
 
+}
+h1{
+    background-color: aliceblue;
+}
+h2{
+    background-color: blueviolet;
+}
+p{
+    background-color: aqua;
+}
+
+/* Header */
+li{
+    background-color: bisque;
+}
+a{
+    /* background-color: chartreuse; */
+}
+
+img{
+    width: 150px;
+    height: 100px;
+    border: solid black 3px;
+}
+nav{
+    display: flex;
+    border: solid red 3px;
+}
+.caja1-header{
+    display: flex;
+    justify-content: center;
+    border: solid blue 3px;
+    width: 30%;
+}
+
+div.caja2-header{
+    border: solid rgb(10, 121, 60) 3px;
+    width: 70%;
+}
+
+.menu-ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    padding-inline-start: 0px;
+    list-style-type: none;
+    border: solid yellow 3px;
 }
