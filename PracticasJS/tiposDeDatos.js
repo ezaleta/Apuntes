@@ -8,6 +8,7 @@ Datos primitivos
 -null
 -bigint()
 -symbol(nuevo tipo de datos)
+-NaN Not a number
 
 Datos compuestos
 -objetos
@@ -18,20 +19,20 @@ Datos compuestos
 let nombre = "Edgar";
 var apellido = "Gonzalez";
 let alert = "Hola Mundo";
-let nombreCompleto ="Edgar Gonzalez Zaleta";
+let nombreCompleto = "Edgar Gonzalez Zaleta";
 let edad = 29;
 let datos = ["Edgar", 29, true, undefined, null];
-let mascotas = ["perro", "gato", "pez",["perico", "caballo", "gallina"]];
+let mascotas = ["perro", "gato", "pez", ["perico", "caballo", "gallina"]];
 let persona = {
-    nombre: "Fulanito",
-    edad: 20,
-    amigos: ["Mengano", "Perengano", "Sutano"]
-}
+  nombre: "Fulanito",
+  edad: 20,
+  amigos: ["Mengano", "Perengano", "Sutano"],
+};
 
 console.log("Hola mi nombre es " + nombreCompleto + " y mi edad es " + edad);
-console.log('Hola mi "nombre" es ' + nombreCompleto + ' y mi edad es ' + edad);
+console.log('Hola mi "nombre" es ' + nombreCompleto + " y mi edad es " + edad);
 //Template string
-console.log(`Hola mi "nombre" es ${nombreCompleto} y mi 'edad' es ${edad}`)
+console.log(`Hola mi "nombre" es ${nombreCompleto} y mi 'edad' es ${edad}`);
 /* alert(nombre); */
 console.log(datos[1]);
 //array multidimensional
